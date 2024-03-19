@@ -1,4 +1,4 @@
-FROM python:3.11.4-alpine3.18 AS dependencies
+FROM python:3.12.2-alpine3.19 AS dependencies
 RUN apk update && apk add --update --no-cache build-base libpq-dev
 RUN pip install --upgrade pip pipenv flake8
 WORKDIR /srv
@@ -19,7 +19,7 @@ USER alpine
 ENV PYTHONUNBUFFERED 1
 ENV PYTHONDONTWRITEBYTECODE 1
 
-FROM python:3.11.4-alpine3.18
+FROM python:3.12.2-alpine3.19
 ARG BUILD_DATE
 ARG BUILD_VERSION
 LABEL maintaner="Jay Amorin <jay.amorin@gmail.com>"
