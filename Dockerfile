@@ -23,8 +23,8 @@ FROM python:3.12.2-alpine3.19
 ARG BUILD_DATE
 ARG BUILD_VERSION
 LABEL maintaner="Jay Amorin <jay.amorin@gmail.com>"
-LABEL org.label-schema.name="skyway-posts-api"
-LABEL org.label-schema.vcs-url="https://github.com/jayamorin/skyway-posts-api"
+LABEL org.label-schema.name="django-api-template"
+LABEL org.label-schema.vcs-url="https://github.com/jayamorin/django-api-template"
 LABEL org.label-schema.vcs-ref=${BUILD_VERSION}
 LABEL org.label-schema.build-date=${BUILD_DATE}
 RUN apk update && apk add --update --no-cache libpq
