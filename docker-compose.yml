@@ -13,6 +13,8 @@ services:
     - 8000:8000
     volumes:
     - ./src:/srv/app
+    - ./Pipfile:/srv/Pipfile
+    - ./Pipfile.lock:/srv/Pipfile.lock
     environment:
       SECRET_KEY: 'hl19#z5u+p1a(7vb3@2**p#8l-gb2s9q_u(=oof(lprm3=3^bt'
       DEBUG: True

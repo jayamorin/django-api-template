@@ -164,4 +164,6 @@ cython_debug/
 */*.swp
 */*/*.swp
 */*/*/*.swp
+
 pgdata
+**/**/fixtures

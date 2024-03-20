@@ -91,4 +91,6 @@ venv/
 */*.swp
 */*/*.swp
 */*/*/*.swp
+
 pgdata
+**/**/fixtures
