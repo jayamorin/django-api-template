@@ -11,6 +11,7 @@ FROM dependencies AS develop
 RUN apk update && apk add --update --no-cache libpq
 RUN addgroup -g 1000 alpine && \
   adduser -u 1000 -G alpine -h /home/alpine -D alpine
+RUN chmod 777 /srv
 WORKDIR /srv
 COPY --from=dependencies /srv/wheels wheels
 COPY --from=dependencies /srv/requirements.txt requirements.txt
